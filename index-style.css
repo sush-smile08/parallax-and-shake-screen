@@ -1,0 +1,139 @@
+.body-wrapper .col-md-6{
+    padding: 0;
+}
+.parallax {
+    min-height: 600px; 
+    background-attachment: fixed;
+}
+.parallax1 {
+    background-image: url("http://s1.picswalls.com/wallpapers/2015/09/20/2015-wallpaper_111525594_269.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("http://www.mojnovisad.com/files/news/8/7/2/20872/20872-computer-2242274-960-720.jpg");
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    background-image: url("https://www.colourbox.com/preview/1617457-key-rests-upon-computer-keyboard-blue-background.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4 {
+    background-image: url("https://vinicio646.files.wordpress.com/2015/03/cropped-20121207-liverpool-street-architecture-213-hdr.jpg");
+    min-height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper{
+    position: relative;
+    height:500px;
+    background:#000;
+    width: 100%;
+}
+.inner-wrapper{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.inner-wrapper h1 {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 800;
+}
+.inner-wrapper p {
+    font-size: 20px;
+    color: #ccc;
+}
+
+
+/* shake-effect */
+.body-cover{
+    background: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/H0MA-uKSipsekm5s/abstract-big-city-downtown-with-modern-high-rise-buildings-skyscrapers-skyline-against-blue-sky-with-clouds-background-realistic-3d-animation-rendered-in-4k_h0271myi_thumbnail-full01.png');
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-wrapper{
+    position: relative;
+    height:800px;
+    width: 100%;
+}
+.login-inner-wrapper{
+    background: #fff;
+    opacity: 0.9;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-body{
+    padding: 20px;
+}
+
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.mystyle {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    -webkit-animation: shake 0.5s;
+    -moz-animation: shake 0.5s;
+    -o-animation: shake 0.5s;
+    transition-duration: 5s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

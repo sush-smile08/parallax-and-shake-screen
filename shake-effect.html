@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Shake-screen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="index-style.css">
+    </head>
+<body>
+    <div class="body-cover" id="shake-screen">
+        <div class="login-wrapper">
+            <div class="login-inner-wrapper">
+                <form >
+                    <div class="form-body">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" id="password" name="password" placeholder="Enter Password" name="psw" required>
+                            
+                        <button type="submit" onclick="myFunction()">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var pss = document.getElementById("password").value;
+
+            if( pss == ""){
+                var element = document.getElementById("shake-screen");
+                element.classList.add("nostyle");
+            } else if( pss != 'password' ){
+                var element = document.getElementById("shake-screen");
+                element.classList.add("mystyle");
+            } else{
+                alert ("Welcome.");
+            }
+           
+         }
+    </script>
+</body>
+</html>
